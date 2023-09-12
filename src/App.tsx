@@ -17,6 +17,7 @@ function App() {
                     <Route index element={<Home />} />
                     <Route path='/partyplatform' element={<PartyPlatform />} />
                     <Route path='/introduction' element={<Introduction />} />
+                    <Route path='/404' element={<NotFound />} />
                     <Route path='*' element={<NotFound />} />
                 </Routes>
             </BrowserRouter>
