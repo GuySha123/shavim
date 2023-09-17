@@ -1,8 +1,12 @@
+import { HomePage } from './Home.styles';
+
 export default function Home() {
     return (
-        <>
-            <h1>שווים</h1>
+        <HomePage>
+            <h1>
+                ש<span style={{ color: `#fff300` }}>וו</span>ים
+            </h1>
             <h2>למען קהילה מיוחדת ואיתנה</h2>
-        </>
+        </HomePage>
     );
 }
