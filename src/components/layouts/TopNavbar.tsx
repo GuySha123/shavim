@@ -1,16 +1,7 @@
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
-import NavDropdown from 'react-bootstrap/NavDropdown';
 import shavimLogo from '../../assets/photos/logo/Shavim_Logo.jpg';
-
-/* const TopNavbar: React.FC<{}> = () => {
-    return (
-        
-    );
-};
-
-export default TopNavbar; */
 
 const TopNavbar = () => {
     return (
