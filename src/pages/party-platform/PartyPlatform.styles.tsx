@@ -8,11 +8,11 @@ export const HeadPartyContainter = styled.div`
 
     @media (max-width: 769px) {
         flex-direction: column;
-        width: 100vw;
+        width: 100%;
     }
     @media (min-width: 769px) {
         padding: 15px 50px;
-        width: 100vw;
+        width: 100%;
     }
     @media (min-width: 1440px) {
         width: 60vw;

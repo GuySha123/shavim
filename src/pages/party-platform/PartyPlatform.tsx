@@ -19,11 +19,10 @@ import {
     PartyMemberTitle,
     HeadPartySpeach,
 } from './PartyPlatform.styles';
-import { PageContainer } from '../../App.styles';
 
 const PartyPlatform = () => {
     return (
-        <PageContainer>
+        <>
             <h2>הנבחרת שלנו</h2>
             <HeadPartyContainter>
                 <HeadPartyMemberPicture
@@ -322,7 +321,7 @@ const PartyPlatform = () => {
                     </p>
                 </PartyMemberInfo>
             </PartyMember>
-        </PageContainer>
+        </>
     );
 };
 

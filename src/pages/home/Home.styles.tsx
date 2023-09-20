@@ -4,14 +4,7 @@ export const HomePage = styled.div`
     display: flex;
     align-items: center;
     flex-direction: column;
-
-    h1 {
-        padding: 1rem;
-        font-weight: 700;
-        font-size: 3em;
-        background-color: #03619f;
-        color: white;
-    }
+    padding: 30px 0 0 0;
 
     /* @media (max-width: 769px) {
         flex-direction: column;

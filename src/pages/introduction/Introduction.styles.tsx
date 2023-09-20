@@ -4,6 +4,7 @@ export const VisionContainer = styled.div`
     display: grid;
     background-color: #03619f;
     grid-template-columns: auto auto auto;
+    width: 80vw;
     padding: 0.938rem 2rem;
     font-size: 2.5em;
     gap: 15px;
