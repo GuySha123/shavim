@@ -10,7 +10,7 @@ import {
     FooterCredit,
     FooterSocialMedia,
     SocialMediaAnchor,
-} from './styles/Footer.styles';
+} from './Footer.styles';
 
 function Footer() {
     return (

@@ -1,7 +1,7 @@
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
-import shavimLogo from '../../assets/photos/logo/Shavim_Logo.jpg';
+import shavimLogo from '../../../assets/photos/logo/Shavim_Logo.jpg';
 
 const TopNavbar = () => {
     return (
