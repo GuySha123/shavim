@@ -17,11 +17,11 @@ export const MessegeContainer = styled.div`
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    padding: 5rem;
+
     border-radius: 15px;
     @media (max-width: 769px) {
-        width: 21rem;
-        height: 15rem;
+        width: 100%;
+        height: 25rem;
         h2 {
             margin: 5px 0px 15px 0px;
         }
@@ -29,6 +29,7 @@ export const MessegeContainer = styled.div`
     @media (min-width: 769px) {
         width: 35rem;
         height: 20rem;
+        padding: 5rem;
         h2 {
             margin: 20px 0px 30px 0px;
         }
