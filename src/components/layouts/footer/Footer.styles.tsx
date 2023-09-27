@@ -11,16 +11,18 @@ export const FooterContainer = styled.div`
     grid-template-rows: repeat(3, 1fr);
     align-items: center;
     justify-content: center;
+    z-index: 9999;
 `;
 export const FooterSocialMedia = styled.div`
     display: flex;
     align-items: center;
     justify-content: center;
-
     grid-area: 2 / 1 / 3 / 4;
 `;
 
 export const SocialMediaAnchor = styled.a`
+    position: relative;
+    z-index: 1499;
     margin: 0 10px;
     border-radius: 50%;
     box-sizing: border-box;
@@ -37,6 +39,7 @@ export const SocialMediaAnchor = styled.a`
 
     &:hover {
         background-color: #03619f;
+        z-index: 1500;
         color: #fff !important;
         box-shadow: 0 0 5px #03619f, 0 0 25px #03619f, 0 0 50px#03619f,
             0 0 100px #03619f;

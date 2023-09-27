@@ -1,5 +1,5 @@
 import React from 'react';
-import { StyledWave, StyledWaveContainer } from './waves.styles';
+import { StyledWave, StyledWaveContainer } from './Waves.styles';
 
 const WaveAnimation: React.FC = () => {
     return (

@@ -15,6 +15,6 @@ export const HomePage = styled.div`
     h2 {
         position: absolute;
         z-index: 1001;
-        top: 300px;
+        top: 265px;
     }
 `;

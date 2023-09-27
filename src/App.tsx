@@ -1,5 +1,5 @@
-import { lazy } from 'react';
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { Suspense, lazy } from 'react';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import NotFound from './components/layouts/not-found/NotFound';
 import TopNavbar from './components/layouts/top-navbar/TopNavbar';
 import Footer from './components/layouts/footer/Footer';
@@ -13,18 +13,24 @@ const Introduction = lazy(() => import('./pages/introduction/Introduction'));
 function App() {
     return (
         <PageContainer>
-            <BrowserRouter>
+            <Router>
                 <TopNavbar />
-                <Routes>
-                    <Route index element={<Home />} />
-                    <Route path='/partyplatform' element={<PartyPlatform />} />
-                    <Route path='/introduction' element={<Introduction />} />
-                    <Route path='/404' element={<NotFound />} />
-                    <Route path='*' element={<NotFound />} />
-                </Routes>
-
+                <Suspense fallback={<div>Loading...</div>}>
+                    <Routes>
+                        <Route path='/' element={<Home />} />
+                        <Route
+                            path='/partyplatform'
+                            element={<PartyPlatform />}
+                        />
+                        <Route
+                            path='/introduction'
+                            element={<Introduction />}
+                        />
+                        <Route path='*' element={<NotFound />} />
+                    </Routes>
+                </Suspense>
                 <Footer />
-            </BrowserRouter>
+            </Router>
         </PageContainer>
     );
 }

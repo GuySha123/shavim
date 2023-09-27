@@ -22,7 +22,6 @@ export const StyledWaveContainer = styled.div`
     position: relative;
     width: 100%;
     height: 80vh;
-    bottom: 0;
     overflow: hidden;
     background-color: #1e8778;
 `;
