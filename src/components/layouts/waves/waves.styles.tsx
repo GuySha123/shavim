@@ -1,5 +1,6 @@
 import styled, { keyframes } from 'styled-components';
 import waveImage from '../../../assets/photos/wave/wave.png';
+import bubbleMembers from '../../../assets/photos/party-members/bubble-memebers.png';
 
 const animate1 = keyframes`
     0% {
@@ -23,7 +24,14 @@ export const StyledWaveContainer = styled.div`
     width: 100%;
     height: 80vh;
     overflow: hidden;
-    background-color: #1e8778;
+    background-color: #0d609b;
+
+    @media (min-width: 769px) {
+        background: url(${bubbleMembers});
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
 `;
 
 export const StyledWave = styled.div`

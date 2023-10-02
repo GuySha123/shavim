@@ -6,7 +6,7 @@ export default function Home() {
     return (
         <HomePage>
             <ShavimLogoComp />
-            <h2>למען קהילה מיוחדת ואיתנה</h2>
+            <h2>למען אנשים מיוחדים וקול הקהילה</h2>
             <WaveAnimation />
         </HomePage>
     );

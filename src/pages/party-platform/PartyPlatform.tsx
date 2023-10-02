@@ -18,6 +18,7 @@ import {
     PartyMemberPicture,
     PartyMemberTitle,
     HeadPartySpeach,
+    YellowLine,
 } from './PartyPlatform.styles';
 
 const PartyPlatform = () => {
@@ -52,7 +53,7 @@ const PartyPlatform = () => {
                     </p>
                 </HeadPartySpeach>
             </HeadPartyContainter>
-
+            <YellowLine />
             <PartyMember variant='right'>
                 <PartyMemberPicture
                     variant='none'

@@ -20,7 +20,7 @@ const TopNavbar: React.FC = () => {
             </Hamburger>
             <NavbarItems $isOpen={isOpen}>
                 <NavbarLink to='/' $isActive={location.pathname === '/'}>
-                    Home
+                    דף הבית
                 </NavbarLink>
                 <NavbarLink
                     to='/partyplatform'

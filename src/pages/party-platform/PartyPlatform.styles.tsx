@@ -14,9 +14,6 @@ export const HeadPartyContainter = styled.div`
         padding: 15px 50px;
         width: 100%;
     }
-    @media (min-width: 1440px) {
-        width: 60vw;
-    }
 `;
 
 export const HeadPartyMemberPicture = styled.div`
@@ -40,6 +37,15 @@ export const HeadPartySpeach = styled.div`
         margin: 5rem;
     }
     @media (min-width: 1440px) {
+    }
+`;
+
+export const YellowLine = styled.div`
+    background-color: #fff300;
+    width: 100%;
+    height: 15px;
+    @media (max-width: 769px) {
+        display: none;
     }
 `;
 
