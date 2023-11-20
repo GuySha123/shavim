@@ -1,3 +1,4 @@
+/* Made by Guy Shalev */
 import { Suspense, lazy } from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import NotFound from './components/layouts/not-found/NotFound';

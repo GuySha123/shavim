@@ -1,17 +1,27 @@
 import styled from 'styled-components';
 
+export const Test = styled.div`
+    display: flex;
+    justify-content: center;
+    align-items: center;
+`;
+
 export const VisionContainer = styled.div`
     display: grid;
     background-color: #03619f;
     grid-template-columns: auto auto auto;
-    width: 80vw;
+    border-radius: 15px;
+    min-width: 70vw;
     padding: 0.938rem 2rem;
     font-size: 2.5em;
     gap: 15px;
+
+    @media (max-width: 480px) {
+        font-size: 1.6em;
+    }
 `;
 
 export const VisionContent = styled.div`
-    background-color: #03619f;
     padding: 0.938rem 2rem;
     color: #fff300;
     display: flex;
@@ -37,7 +47,16 @@ export const VisionContent = styled.div`
     }
 
     @media (max-width: 480px) {
-        padding: 0; /* Adjust padding for smaller screens */
-        /* Other adjustments for smaller screens */
+        padding: 0.6rem 0;
+        margin: 0;
+
+        &::after {
+            right: -10%;
+            top: 25%;
+        }
     }
+`;
+
+export const HeadPartyWordsContent = styled.div`
+    padding: 15px;
 `;
