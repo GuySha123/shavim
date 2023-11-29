@@ -41,8 +41,8 @@ export const SocialMediaAnchor = styled.a`
         background-color: #03619f;
         z-index: 1500;
         color: #fff !important;
-        box-shadow: 0 0 5px #03619f, 0 0 25px #03619f, 0 0 50px#03619f,
-            0 0 100px #03619f;
+        box-shadow: 0 0 5px #03619fd0, 0 0 25px #03619fbc, 0 0 50px#03619fc2,
+            0 0 100px #03619fb7;
     }
 `;
 

@@ -1,5 +1,9 @@
 import styled from 'styled-components';
 
+export const IntroductionContainer = styled.div`
+    height: 100vh;
+`;
+
 export const Test = styled.div`
     display: flex;
     justify-content: center;
@@ -57,6 +61,17 @@ export const VisionContent = styled.div`
     }
 `;
 
+export const HeadPartyWordsContentContainer = styled.div`
+    display: flex;
+    justify-content: center;
+`;
+
 export const HeadPartyWordsContent = styled.div`
+    max-width: 80vw;
+    text-align: justify;
     padding: 15px;
+
+    @media (max-width: 480px) {
+        max-width: 100vw;
+    }
 `;
