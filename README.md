@@ -12,4 +12,4 @@ yarn run dev
 pnpm dev
 ```
 
-This project uses [styled-components](https://styled-components.com/) to style any copmponent easer and more efficient.
+This project uses [styled-components](https://styled-components.com/) to style any copmponent easier and more efficient.
