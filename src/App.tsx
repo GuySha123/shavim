@@ -5,6 +5,7 @@ import NotFound from './components/layouts/not-found/NotFound';
 import TopNavbar from './components/layouts/top-navbar/TopNavbar';
 import Footer from './components/layouts/footer/Footer';
 import { PageContainer } from './App.styles';
+import Loading from './components/layouts/loading/Loading';
 const Home = lazy(() => import('./pages/home/Home'));
 const PartyPlatform = lazy(
     () => import('./pages/party-platform/PartyPlatform')
@@ -16,7 +17,7 @@ function App() {
         <PageContainer>
             <Router>
                 <TopNavbar />
-                <Suspense fallback={<div>Loading...</div>}>
+                <Suspense fallback={<Loading />}>
                     <Routes>
                         <Route path='/' element={<Home />} />
                         <Route
