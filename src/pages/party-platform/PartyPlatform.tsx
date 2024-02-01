@@ -24,7 +24,6 @@ import {
 const PartyPlatform = () => {
     return (
         <>
-            <h2>הנבחרת שלנו</h2>
             <HeadPartyContainter>
                 <HeadPartyMemberPicture
                     style={{
@@ -49,7 +48,7 @@ const PartyPlatform = () => {
                         צעירים קשרי חוץ, ספורט ועוד, כיאה לרשימה שחבריה הם אנשים
                         מוכשרים המוכנים לתרום מהידע והניסיון שלהם לטובת הקהילה.
                         <br />
-                        <b>איתן ליליוס</b>
+                        <b>איתן ליליוס יו"ר סיעת שווים</b>
                     </p>
                 </HeadPartySpeach>
             </HeadPartyContainter>

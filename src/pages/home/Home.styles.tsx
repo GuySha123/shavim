@@ -1,10 +1,12 @@
 import styled from 'styled-components';
 
 export const HomePage = styled.div`
+    height: 100vh;
     display: flex;
     position: relative;
     align-items: center;
     flex-direction: column;
+    background-color: #0d609b;
 
     h1 {
         position: absolute;
