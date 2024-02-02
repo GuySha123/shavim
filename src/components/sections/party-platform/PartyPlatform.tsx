@@ -1,15 +1,15 @@
-import eitanPicture from '../../assets/photos/party-members/eitan-no-background.png';
-import oriPicture from '../../assets/photos/party-members/ori-pic.jpeg';
-import limorPicture from '../../assets/photos/party-members/limor-pic.jpeg';
-import dividPicture from '../../assets/photos/party-members/david-pic.jpeg';
-import rachelPicture from '../../assets/photos/party-members/rachel-pic.jpeg';
-import meniPicture from '../../assets/photos/party-members/meni-pic.jpeg';
-import galitPicture from '../../assets/photos/party-members/galit-pic.jpeg';
-import galPicture from '../../assets/photos/party-members/gal-pic.jpeg';
-import nitzaPicture from '../../assets/photos/party-members/nitza-pic.jpeg';
-import yoelPicture from '../../assets/photos/party-members/yoel-pic.jpeg';
-import effiPicture from '../../assets/photos/party-members/effi-pic.jpeg';
-import michalPicture from '../../assets/photos/party-members/michal-pic.jpeg';
+import eitanPicture from '../../../assets/photos/party-members/eitan-no-background.png';
+import oriPicture from '../../../assets/photos/party-members/ori-pic.jpeg';
+import limorPicture from '../../../assets/photos/party-members/limor-pic.jpeg';
+import dividPicture from '../../../assets/photos/party-members/david-pic.jpeg';
+import rachelPicture from '../../../assets/photos/party-members/rachel-pic.jpeg';
+import meniPicture from '../../../assets/photos/party-members/meni-pic.jpeg';
+import galitPicture from '../../../assets/photos/party-members/galit-pic.jpeg';
+import galPicture from '../../../assets/photos/party-members/gal-pic.jpeg';
+import nitzaPicture from '../../../assets/photos/party-members/nitza-pic.jpeg';
+import yoelPicture from '../../../assets/photos/party-members/yoel-pic.jpeg';
+import effiPicture from '../../../assets/photos/party-members/effi-pic.jpeg';
+import michalPicture from '../../../assets/photos/party-members/michal-pic.jpeg';
 import {
     HeadPartyContainter,
     HeadPartyMemberPicture,

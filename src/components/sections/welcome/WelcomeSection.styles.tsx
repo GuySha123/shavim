@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-export const HomePage = styled.div`
+export const WelcomeContainer = styled.div`
     height: 100vh;
     display: flex;
     position: relative;

@@ -11,7 +11,6 @@ export const PageContainer = styled.div`
     h2 {
         font-size: 3em;
         text-align: center;
-        color: #03619f;
         font-weight: 700;
     }
 `;
