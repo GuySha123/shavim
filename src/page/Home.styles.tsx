@@ -7,10 +7,4 @@ export const PageContainer = styled.div`
     display: flex;
     flex-direction: column;
     background-color: #dff2ff;
-
-    h2 {
-        font-size: 3em;
-        text-align: center;
-        font-weight: 700;
-    }
 `;
