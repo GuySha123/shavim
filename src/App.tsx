@@ -5,9 +5,6 @@ import NotFound from './components/layouts/not-found/NotFound';
 import Footer from './components/layouts/footer/Footer';
 import Loading from './components/layouts/loading/Loading';
 const Home = lazy(() => import('./page/Home'));
-const Introduction = lazy(
-    () => import('./components/sections/introduction/Introduction')
-);
 
 function App() {
     return (
@@ -16,10 +13,6 @@ function App() {
                 <Suspense fallback={<Loading />}>
                     <Routes>
                         <Route path='/' element={<Home />} />
-                        <Route
-                            path='/introduction'
-                            element={<Introduction />}
-                        />
                         <Route path='*' element={<NotFound />} />
                     </Routes>
                 </Suspense>

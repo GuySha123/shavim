@@ -1,20 +1,19 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import {
-    faFacebookF,
-    faInstagram,
-    faLinkedinIn,
-} from '@fortawesome/free-brands-svg-icons';
+import { faFacebookF, faInstagram } from '@fortawesome/free-brands-svg-icons';
 
 import {
+    ContactParty,
     FooterContainer,
     FooterCredit,
     FooterSocialMedia,
+    JoinUsTitle,
     SocialMediaAnchor,
 } from './Footer.styles';
 
 function Footer() {
     return (
         <FooterContainer>
+            <JoinUsTitle>צטרפו אלינו!</JoinUsTitle>
             <FooterSocialMedia>
                 <SocialMediaAnchor
                     href='#'
@@ -32,15 +31,12 @@ function Footer() {
                 >
                     <FontAwesomeIcon icon={faFacebookF} />
                 </SocialMediaAnchor>
-                <SocialMediaAnchor
-                    href='#'
-                    target='_blank'
-                    style={{ color: `#0072b1` }}
-                    title='קישור לעמוד הלינקדאין'
-                >
-                    <FontAwesomeIcon icon={faLinkedinIn} />
-                </SocialMediaAnchor>
             </FooterSocialMedia>
+            <ContactParty>
+                צרו קשר:
+                <br />
+                050-3288879
+            </ContactParty>
             <FooterCredit>Made by Guy Shalev</FooterCredit>
         </FooterContainer>
     );

@@ -5,14 +5,24 @@ export const HeadPartyContainter = styled.div`
     color: #03619f;
     display: flex;
     align-items: center;
+    margin: auto;
 
     @media (max-width: 769px) {
         flex-direction: column;
         width: 100%;
     }
-    @media (min-width: 769px) {
+    @media (min-width: 770px) and (max-width: 1025px) {
+        padding: 0;
+    }
+
+    @media (min-width: 1026px) and (max-width: 1439px) {
         padding: 15px 50px;
-        width: 100%;
+        width: 80vw;
+    }
+
+    @media (min-width: 1440px) {
+        padding: 15px 50px;
+        width: 60vw;
     }
 `;
 
@@ -31,12 +41,9 @@ export const HeadPartyMemberPicture = styled.div`
 export const HeadPartySpeach = styled.div`
     flex: 1;
     padding: 16px;
-    @media (max-width: 769px) {
-    }
+
     @media (min-width: 769px) {
         margin: 5rem;
-    }
-    @media (min-width: 1440px) {
     }
 `;
 

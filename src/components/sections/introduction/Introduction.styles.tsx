@@ -27,7 +27,7 @@ export const ValueInfo = styled.div`
     }
 `;
 
-export const PartysValueContaner = styled.div`
+export const PartysValueContainer = styled.div`
     display: flex;
 `;
 
@@ -41,7 +41,7 @@ export const ValueHeading = styled.h2`
     @media (max-width: 320px) {
         font-size: 1.5em;
     }
-    @media (min-width: 320px) and (max-width: 480px) {
+    @media (min-width: 321px) and (max-width: 480px) {
         font-size: 2.5em;
     }
 `;

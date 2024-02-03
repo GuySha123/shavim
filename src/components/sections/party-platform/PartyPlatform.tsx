@@ -21,8 +21,6 @@ import {
     YellowLine,
 } from './PartyPlatform.styles';
 
-import memberData from '../../../data/member-data.json';
-
 type MemberDescription = {
     name: string;
     title: string;
@@ -34,7 +32,7 @@ type PartyPlatformProps = {
     data: MemberDescription[];
 };
 
-const PartyPlatform = ({ data = memberData }: PartyPlatformProps) => {
+const PartyPlatform = ({ data }: PartyPlatformProps) => {
     const pictureImports = [
         oriPicture,
         limorPicture,

@@ -1,14 +1,14 @@
 import ShavimLogoHeadingSecond from '../../logo/ShavimLogoHeadingSecond';
 import {
     HeadPartyWordsContentContainer,
-    PartysValueContaner,
+    PartysValueContainer,
     ValueHeading,
     ValueInfo,
 } from './Introduction.styles';
-import shavimData from '../../../data/shavim-value.json';
 
 type ValueText = {
     'value-name': string;
+    title: string;
     text: string;
 };
 
@@ -16,15 +16,15 @@ type IntroductionProps = {
     data: ValueText[];
 };
 
-const Introduction = ({ data = shavimData }: IntroductionProps) => {
+const Introduction = ({ data }: IntroductionProps) => {
     return (
         <HeadPartyWordsContentContainer>
             {data.map((item, index) => (
                 <ValueInfo key={index}>
-                    <PartysValueContaner>
+                    <PartysValueContainer title={item.title}>
                         <ShavimLogoHeadingSecond />{' '}
                         <ValueHeading>{item['value-name']}</ValueHeading>
-                    </PartysValueContaner>
+                    </PartysValueContainer>
                     <p>{item.text}</p>
                 </ValueInfo>
             ))}
