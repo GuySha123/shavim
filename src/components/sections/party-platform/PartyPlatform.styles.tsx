@@ -49,10 +49,10 @@ export const YellowLine = styled.div`
     }
 `;
 
-export const PartyMember = styled.div<{ variant: PictureVariant }>`
+export const PartyMember = styled.div<{ $variant: PictureVariant }>`
     background-color: ${(props) =>
-        props.variant === 'right' ? '#03619f' : '#dff2ff'};
-    color: ${(props) => (props.variant === 'right' ? '#fff300' : '#03619f')};
+        props.$variant === 'right' ? '#03619f' : '#dff2ff'};
+    color: ${(props) => (props.$variant === 'right' ? '#fff300' : '#03619f')};
     display: flex;
     align-items: center;
 
@@ -60,29 +60,28 @@ export const PartyMember = styled.div<{ variant: PictureVariant }>`
         flex-direction: column;
         padding: 2rem 1rem;
     }
-    @media (min-width: 769px) {
-        padding: 3rem 10rem;
-        h4 {
-            margin-right: 8px;
-            margin-top: 2px;
-        }
+
+    @media (min-width: 770px) and (max-width: 1025px) {
+        padding: 3rem 6.5rem;
     }
-    @media (min-width: 1200px) {
-        padding: 3rem 10rem;
+
+    @media (min-width: 1026px) and (max-width: 1280px) {
+        padding: 3rem 5rem;
     }
-    @media (min-width: 1440px) {
-        padding: 3rem 25rem;
+    @media (min-width: 1281px) {
+        padding: 3rem 18rem;
     }
 `;
 
-export const PartyMemberPicture = styled.div<{ variant: PictureVariant }>`
+export const PartyMemberPicture = styled.div<{ $variant: PictureVariant }>`
     height: 12.5rem;
     width: 12.5rem;
     background-repeat: no-repeat;
     background-size: cover;
     border-radius: 50%;
+    order: ${(props) => (props.$variant === 'switch-place' ? '1' : '0')};
     @media (max-width: 769px) {
-        order: ${(props) => (props.variant === 'switch-place' ? '-1' : '0')};
+        order: ${(props) => (props.$variant === 'switch-place' ? '-1' : '0')};
     }
 `;
 
@@ -91,9 +90,7 @@ export const PartyMemberInfo = styled.div`
     padding: 16px;
 `;
 
-export const PartyMemberTitle = styled.div`
-    @media (min-width: 769px) {
-        display: flex;
-        align-items: 'center';
-    }
+export const PartyMemberTitle = styled.h2`
+    font-size: 2em;
+    font-weight: 700;
 `;

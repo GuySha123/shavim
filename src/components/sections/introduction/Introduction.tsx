@@ -1,119 +1,34 @@
+import ShavimLogoHeadingSecond from '../../logo/ShavimLogoHeadingSecond';
 import {
-    HeadPartyWordsContent,
     HeadPartyWordsContentContainer,
-    Test,
-    VisionContainer,
-    VisionContent,
+    PartysValueContaner,
+    ValueHeading,
+    ValueInfo,
 } from './Introduction.styles';
+import shavimData from '../../../data/shavim-value.json';
 
-const Introduction = () => {
+type ValueText = {
+    'value-name': string;
+    text: string;
+};
+
+type IntroductionProps = {
+    data: ValueText[];
+};
+
+const Introduction = ({ data = shavimData }: IntroductionProps) => {
     return (
-        <>
-            <h2>החזון</h2>
-
-            <Test>
-                <VisionContainer>
-                    <VisionContent>חינוך</VisionContent>
-                    <VisionContent>תרובות</VisionContent>
-                    <VisionContent>ביטחון</VisionContent>
-                    <VisionContent>תחבורה</VisionContent>
-                    <VisionContent>תשתיות</VisionContent>
-                    <VisionContent>קיימות</VisionContent>
-                </VisionContainer>
-            </Test>
-
-            <HeadPartyWordsContentContainer>
-                <HeadPartyWordsContent>
-                    <p>
-                        קהילת שוהם היקרה,
-                        <br />5 שנים חלפו מאז שקפצתי למים העמוקים של הפוליטיקה
-                        המקומית, והרבה מים זרמו מאז שהקמתי את סיעת "שווים".
-                    </p>
-                    <p>
-                        אני גאה ונרגש שרשימה מיוחדת זו היוותה השראה לרשימות רבות
-                        בכל רחבי הארץ שהציפו את סדר היום היישובי שלהן בצורך
-                        בשוויון אמיתי לקהילת משפחות בעלות צרכים מיוחדים, על כל
-                        גווניה.
-                    </p>
-                    <p>
-                        קיבלתי עליי את האתגר להיות שליח ציבור של אוכלוסייה
-                        מיוחדת עם צרכים מיוחדים, אבל בפועל עבדתי בהתנדבות למען
-                        <b> כל תושבי שוהם</b>, כי בעיניי
-                        <b> כל קהילת שוהם היא מיוחדת </b>
-                        במינה. כחבר בהנהלת המועצה וסגן ראש המועצה הייתי הקול של
-                        הקהילה כולה וייצגתי אותה בוועדות השונות במועצה.
-                    </p>
-                    <p>
-                        סיעת שווים הייתה דוגמא ומופת לרשויות רבות שהבינו את
-                        החשיבות והצורך לטפל במשפחות עם צרכים מיוחדים והפיכתם
-                        לחברי קהילה ולא רק "תושבים".
-                    </p>
-                    <h3>
-                        מעט מההישגים להם הייתי שותף וחלקם אף יזמתי, כפי שהבטחתי:
-                    </h3>
-                    <ul>
-                        <li>הקמת מסגרות נוספות של גני ילדים בחינוך המיוחד.</li>
-                        <li>הקמת כיתת תקשורת בחטיבת הביניים יהלום.</li>
-                        <li>
-                            יוזמה שלי: קייטנה בת חמישה ימים לילדים המיוחדים
-                            בחופש הגדול, הפועלת מזה 3 שנים.
-                        </li>
-                        <li>הקמת תנועת הנוער "כנפיים של קרמבו" בשוהם.</li>
-                        <li>
-                            כמחזיק תיק הרווחה ובשיתוף עם חבר המועצה שימי אלבאז
-                            מחזיק תיק הספורט, פעלתי להפעלת חוגים לילדים עם צרכים
-                            מיוחדים: מכבי שוהם – כדורגל, שחיה וטניס שולחן.
-                            במסגרת המועדונית- חוג כדורסל. כמו כן, חוג מקהלה
-                            מיוחדת.
-                        </li>
-                        <li>
-                            הקמת "בית לחיים" בהובלתו של ראש המועצה, איתן פטיגרו.
-                        </li>
-                        <li>
-                            שותף בהקמה ובחירה של מתקנים בגן היובל, הגן הנגיש.
-                        </li>
-                        <li>
-                            כחבר הנהלת עמותת אקי"ם צירפתי את שוהם לפעילות והיום
-                            הסניף מוכר כסניף אקי"ם שוהם - לוד.
-                        </li>
-                        <li>
-                            פרויקט חלוקת ציוד וחזרה לבית הספר למיוחדים ומשפחות
-                            רווחה.
-                        </li>
-                        <li>קבלת קהל פעם בשבוע במסגרת יום פתוח.</li>
-                    </ul>
-                    <p>
-                        מאז שנבחרתי למועצה, שוהם הפכה להיות יישוב לעליה לרגל של
-                        משפחות מיוחדות שבחרו לחיות בה בשל תשומת הלב המיוחדת
-                        שמוענקת להם.
-                    </p>
-                    <p>
-                        בזכות סיעת "שווים" שוהם מדברת קהילה סובלנית ומכילה את
-                        האחר.
-                    </p>
-                    <p>
-                        <b>לכן </b>
-                        נדרש עדיין קול עקבי בתוך המועצה שימשיך את העבודה החשובה
-                        שאנחנו עושים, היום יותר מתמיד: שוהם מתרחבת בקצב מהיר
-                        ומטבע הדברים הצרכים המיוחדים של הקהילות השונות, גדלים אף
-                        הם.
-                    </p>
-                    <p>
-                        אני מגויס כולי לקראת העשייה הרבה שמצפה לי ולחבריי לרשימה
-                        בקדנציה הבאה.
-                    </p>
-                    <p>
-                        זהו האינטרס הקהילתי שלנו להמשיך להעניק לי ולסיעה את הקול
-                        שלכם.
-                    </p>
-                    <p>
-                        שלכם ולמענכם,
-                        <br />
-                        איתן ליליוס
-                    </p>
-                </HeadPartyWordsContent>
-            </HeadPartyWordsContentContainer>
-        </>
+        <HeadPartyWordsContentContainer>
+            {data.map((item, index) => (
+                <ValueInfo key={index}>
+                    <PartysValueContaner>
+                        <ShavimLogoHeadingSecond />{' '}
+                        <ValueHeading>{item['value-name']}</ValueHeading>
+                    </PartysValueContaner>
+                    <p>{item.text}</p>
+                </ValueInfo>
+            ))}
+        </HeadPartyWordsContentContainer>
     );
 };
 

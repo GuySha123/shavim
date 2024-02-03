@@ -8,7 +8,7 @@ export const WelcomeContainer = styled.div<{ $scrolled: boolean }>`
     justify-content: center;
     height: ${({ $scrolled }) => ($scrolled ? '20vh' : '100vh')};
     transition: all 0.3s ease-in-out;
-    background-color: ${({ $scrolled }) => ($scrolled ? '#dff2ff' : '#0d609b')};
+    background-color: ${({ $scrolled }) => ($scrolled ? '#dff2ff' : '#03619f')};
     @media (max-width: 769px) {
         height: ${({ $scrolled }) => ($scrolled ? '35vh' : '100vh')};
         transition: all 0.1s ease-in-out;
@@ -18,7 +18,7 @@ export const WelcomeContainer = styled.div<{ $scrolled: boolean }>`
 export const HeaderContainer = styled.div<{ $scrolled: boolean }>`
     position: fixed;
     top: 0;
-    width: ${({ $scrolled }) => ($scrolled ? '55%' : '100%')};
+    width: ${({ $scrolled }) => ($scrolled ? '600px' : '100%')};
     height: ${({ $scrolled }) => ($scrolled ? '90px' : 'auto')};
     flex-direction: ${({ $scrolled }) => ($scrolled ? 'row' : 'column')};
     padding: ${({ $scrolled }) => ($scrolled ? '10px 0' : '0')};
@@ -26,13 +26,14 @@ export const HeaderContainer = styled.div<{ $scrolled: boolean }>`
     align-items: center;
     justify-content: center;
     transition: all 0.3s ease-in-out;
-    background-color: #0d609b;
+    background-color: #03619f;
     border-radius: 0 0 15px 15px;
     z-index: 1001;
-    gap: 10px;
+    gap: 30px;
 
     @media (max-width: 769px) {
         width: 100%;
+        gap: 10px;
     }
 
     h1 {
@@ -97,6 +98,6 @@ export const ShavimPetek = styled.div<{ $scrolled?: boolean }>`
     }
 
     @media (min-width: 770px) and (max-width: 1025px) {
-        left: calc(100vw - 85vw);
+        left: calc(100vw - 80vw);
     }
 `;

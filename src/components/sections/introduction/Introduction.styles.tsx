@@ -1,77 +1,47 @@
 import styled from 'styled-components';
 
-export const IntroductionContainer = styled.div`
-    height: 100vh;
-`;
-
-export const Test = styled.div`
-    display: flex;
-    justify-content: center;
-    align-items: center;
-`;
-
-export const VisionContainer = styled.div`
-    display: grid;
-    background-color: #03619f;
-    grid-template-columns: auto auto auto;
-    border-radius: 15px;
-    min-width: 70vw;
-    padding: 0.938rem 2rem;
-    font-size: 2.5em;
-    gap: 15px;
-
-    @media (max-width: 480px) {
-        font-size: 1.6em;
-    }
-`;
-
-export const VisionContent = styled.div`
-    padding: 0.938rem 2rem;
-    color: #fff300;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-
-    &::after {
-        content: '';
-        width: 1px;
-        background-color: #ffffff;
-        height: 70%;
-        position: absolute;
-        right: 0;
-        top: 25%;
-    }
-
-    &:nth-child(1),
-    &:nth-child(4) {
-        &::after {
-            display: none;
-        }
-    }
-
-    @media (max-width: 480px) {
-        padding: 0.6rem 0;
-        margin: 0;
-
-        &::after {
-            right: -10%;
-            top: 25%;
-        }
-    }
-`;
-
 export const HeadPartyWordsContentContainer = styled.div`
-    display: flex;
-    justify-content: center;
-`;
+    width: 100%;
 
-export const HeadPartyWordsContent = styled.div`
-    max-width: 80vw;
-    text-align: justify;
     padding: 15px;
+    color: #03619f;
 
     @media (max-width: 480px) {
         max-width: 100vw;
+    }
+`;
+
+export const ValueInfo = styled.div`
+    margin: 30px 20vw;
+
+    @media (max-width: 769px) {
+        margin: 50px 1.1vw;
+    }
+
+    @media (min-width: 770px) and (max-width: 1025px) {
+        margin: 30px 100px;
+    }
+
+    @media (min-width: 1026px) and (max-width: 1280px) {
+        margin: 30px 15vw;
+    }
+`;
+
+export const PartysValueContaner = styled.div`
+    display: flex;
+`;
+
+export const ValueHeading = styled.h2`
+    width: 150px;
+    padding: 0.8rem;
+    text-align: center;
+    font-size: 3em;
+    font-weight: 800;
+
+    @media (max-width: 320px) {
+        font-size: 1.5em;
+    }
+    @media (min-width: 320px) and (max-width: 480px) {
+        font-size: 2.5em;
     }
 `;
