@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import exampleOne from '../../../assets/photos/other/example-1.jpg';
 
 export const PartysActionsContainer = styled.div`
     width: 100%;
@@ -41,6 +42,7 @@ export const ActionsContent = styled.div`
 `;
 
 export const ActionsPictures = styled.div`
+    background-image: url(${exampleOne});
     width: 100%;
     min-height: 550px;
     background-repeat: no-repeat;

@@ -2,7 +2,7 @@ import Introduction from '../components/sections/introduction/Introduction';
 import PartyPlatform from '../components/sections/party-platform/PartyPlatform';
 import WelcomeSection from '../components/sections/welcome/WelcomeSection';
 import { PageContainer } from './Home.styles';
-import memberData from '../data/member-data.json';
+import { memberData } from '../data/member-data';
 import shavimData from '../data/shavim-value.json';
 import PartysActions from '../components/sections/partys-actions/PartysActions';
 

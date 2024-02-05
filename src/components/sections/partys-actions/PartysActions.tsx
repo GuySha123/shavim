@@ -6,7 +6,6 @@ import {
     PartysActionsContainer,
     PartysActionsTitleContainer,
 } from './PartysActions.styles';
-import exampleOne from '../../../assets/photos/other/example-1.jpg';
 
 function PartysActions() {
     return (
@@ -16,12 +15,7 @@ function PartysActions() {
                 <ActionsTitleHeadingTwo>למענכם</ActionsTitleHeadingTwo>
             </PartysActionsTitleContainer>
             <ActionsContent>
-                <ActionsPictures
-                    style={{
-                        backgroundImage: `url(${exampleOne})`,
-                    }}
-                    title={`example1`}
-                />
+                <ActionsPictures title={`example1`} />
 
                 <p>
                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -34,12 +28,7 @@ function PartysActions() {
                 </p>
             </ActionsContent>
             <ActionsContent>
-                <ActionsPictures
-                    style={{
-                        backgroundImage: `url(${exampleOne})`,
-                    }}
-                    title={`example1`}
-                />
+                <ActionsPictures title={`example1`} />
 
                 <p>
                     Lorem ipsum dolor sit amet consectetur adipisicing elit.

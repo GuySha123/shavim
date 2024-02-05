@@ -80,7 +80,11 @@ export const PartyMember = styled.div<{ $variant: PictureVariant }>`
     }
 `;
 
-export const PartyMemberPicture = styled.div<{ $variant: PictureVariant }>`
+export const PartyMemberPicture = styled.div<{
+    $variant: PictureVariant;
+    $image: string;
+}>`
+    background-image: url(${(props) => props.$image});
     height: 12.5rem;
     width: 12.5rem;
     background-repeat: no-repeat;
