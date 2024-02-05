@@ -1,6 +1,10 @@
 import styled from 'styled-components';
 import ShavimTicket from '../../../assets/photos/logo/Shavim-Ticket.jpg';
 
+//TODO:
+//Increase the size of the title
+//Check if the ShavimTicket is fitting after changes
+
 export const WelcomeContainer = styled.div<{ $scrolled: boolean }>`
     position: relative;
     display: flex;

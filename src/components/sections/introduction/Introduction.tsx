@@ -6,6 +6,8 @@ import {
     ValueInfo,
 } from './Introduction.styles';
 
+//TODO: Change the json file to TS
+
 type ValueText = {
     'value-name': string;
     title: string;

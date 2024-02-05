@@ -10,6 +10,10 @@ import oriPicture from '../assets/photos/party-members/ori-pic.jpeg';
 import rachelPicture from '../assets/photos/party-members/rachel-pic.jpeg';
 import yoelPicture from '../assets/photos/party-members/yoel-pic.jpeg';
 
+//TODO:
+//Copy the text that Aviel sent me
+//Talk to Shahaf about the new images of the party members
+
 export type MemberDescription = {
     name: string;
     title: string;

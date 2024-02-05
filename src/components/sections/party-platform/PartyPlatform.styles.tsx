@@ -1,6 +1,8 @@
 import styled from 'styled-components';
 type PictureVariant = 'switch-place' | 'left' | 'right' | 'none';
 
+//TODO: Change the size of the images (increase)
+
 export const HeadPartyContainter = styled.div`
     color: #03619f;
     display: flex;
