@@ -1,8 +1,6 @@
 import styled from 'styled-components';
 type PictureVariant = 'switch-place' | 'left' | 'right' | 'none';
 
-//TODO: Change the size of the images (increase)
-
 export const HeadPartyContainter = styled.div`
     color: #03619f;
     display: flex;
@@ -79,6 +77,7 @@ export const PartyMember = styled.div<{ $variant: PictureVariant }>`
     }
     @media (min-width: 1281px) {
         padding: 3rem 18rem;
+        gap: 75px;
     }
 `;
 
@@ -87,13 +86,17 @@ export const PartyMemberPicture = styled.div<{
     $image: string;
 }>`
     background-image: url(${(props) => props.$image});
-    height: 12.5rem;
-    width: 12.5rem;
+    min-height: 17.5rem;
+    min-width: 17.5rem;
+    border-radius: 50%;
     background-repeat: no-repeat;
     background-size: cover;
-    border-radius: 50%;
+
     order: ${(props) => (props.$variant === 'switch-place' ? '1' : '0')};
     @media (max-width: 769px) {
+        height: 12.5rem;
+        width: 12.5rem;
+
         order: ${(props) => (props.$variant === 'switch-place' ? '-1' : '0')};
     }
 `;
