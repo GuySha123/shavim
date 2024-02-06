@@ -51,7 +51,7 @@ const PartyPlatform = ({ data }: PartyPlatformProps) => {
                         קול וכל עזרה חשובה להמשך המסע שהתחיל לפני 5 שנים.
                         <br />
                         בבחירות הקרובות כולנו שמים ש' לסיעת שווים בקלפי
-                        <br />
+                        <DoubleBreak />
                         <b>איתן ליליוס יו"ר סיעת שווים</b>
                     </p>
                 </HeadPartySpeach>

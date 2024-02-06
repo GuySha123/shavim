@@ -1,3 +1,4 @@
+import { ValueText } from '../../../data/shavim-value';
 import ShavimLogoHeadingSecond from '../../logo/ShavimLogoHeadingSecond';
 import {
     HeadPartyWordsContentContainer,
@@ -5,14 +6,6 @@ import {
     ValueHeading,
     ValueInfo,
 } from './Introduction.styles';
-
-//TODO: Change the json file to TS
-
-type ValueText = {
-    'value-name': string;
-    title: string;
-    text: string;
-};
 
 type IntroductionProps = {
     data: ValueText[];
