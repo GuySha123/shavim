@@ -1,3 +1,4 @@
+import { PartyActions } from '../../../data/party-actions-data';
 import ShavimLogoHeadingSecond from '../../logo/ShavimLogoHeadingSecond';
 import {
     ActionsContent,
@@ -7,39 +8,28 @@ import {
     PartysActionsTitleContainer,
 } from './PartysActions.styles';
 
-function PartysActions() {
+type PartyActionsProps = {
+    data: PartyActions[];
+};
+
+function PartysActions({ data }: PartyActionsProps) {
     return (
         <PartysActionsContainer>
             <PartysActionsTitleContainer>
                 <ShavimLogoHeadingSecond />{' '}
-                <ActionsTitleHeadingTwo>למענכם</ActionsTitleHeadingTwo>
+                <ActionsTitleHeadingTwo>למען הקהילה</ActionsTitleHeadingTwo>
             </PartysActionsTitleContainer>
-            <ActionsContent>
-                <ActionsPictures title={`example1`} />
 
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Soluta culpa quis officia, corporis voluptatum ipsam facere
-                    fuga. Eos reprehenderit laboriosam in temporibus! At
-                    architecto amet assumenda error, ducimus porro, quidem
-                    commodi, dolore consequatur recusandae perspiciatis minima
-                    sed! Alias eum atque sed, pariatur sunt commodi quam magnam
-                    ut blanditiis assumenda vero!
-                </p>
-            </ActionsContent>
-            <ActionsContent>
-                <ActionsPictures title={`example1`} />
-
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Soluta culpa quis officia, corporis voluptatum ipsam facere
-                    fuga. Eos reprehenderit laboriosam in temporibus! At
-                    architecto amet assumenda error, ducimus porro, quidem
-                    commodi, dolore consequatur recusandae perspiciatis minima
-                    sed! Alias eum atque sed, pariatur sunt commodi quam magnam
-                    ut blanditiis assumenda vero!
-                </p>
-            </ActionsContent>
+            {data.map((item, index) => (
+                <ActionsContent key={index}>
+                    <ActionsPictures
+                        $image={item.actionPic}
+                        title={`${item.alt}`}
+                    />
+                    <h3>{item.title}</h3>
+                    <p>{item.description}</p>
+                </ActionsContent>
+            ))}
         </PartysActionsContainer>
     );
 }

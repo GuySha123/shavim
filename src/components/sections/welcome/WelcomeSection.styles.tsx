@@ -11,6 +11,7 @@ export const WelcomeContainer = styled.div<{ $scrolled: boolean }>`
     align-items: center;
     justify-content: center;
     height: ${({ $scrolled }) => ($scrolled ? '20vh' : '100vh')};
+    height: ${({ $scrolled }) => ($scrolled ? '20svh' : '100svh')};
     transition: all 0.3s ease-in-out;
     background-color: ${({ $scrolled }) => ($scrolled ? '#dff2ff' : '#03619f')};
     @media (max-width: 769px) {
@@ -42,7 +43,8 @@ export const HeaderContainer = styled.div<{ $scrolled: boolean }>`
 
     h1 {
         position: ${({ $scrolled }) => ($scrolled ? 'static' : 'absolute')};
-        font-size: ${({ $scrolled }) => ($scrolled ? '4em' : '12em')};
+        font-size: ${({ $scrolled }) =>
+            $scrolled ? '4em !important' : '12em'};
         top: ${({ $scrolled }) => ($scrolled ? '0' : '125px')};
         background-color: ${({ $scrolled }) =>
             $scrolled ? 'none' : '#0d609bd6'};
@@ -50,12 +52,14 @@ export const HeaderContainer = styled.div<{ $scrolled: boolean }>`
         transition: top 0.3s ease-in-out;
 
         @media (max-width: 375px) {
-            font-size: ${({ $scrolled }) => ($scrolled ? '4em' : '6em')};
+            font-size: ${({ $scrolled }) =>
+                $scrolled ? '4em !important' : '6em'};
             top: 50px;
         }
 
         @media (min-width: 375px) and (max-width: 769px) {
-            font-size: ${({ $scrolled }) => ($scrolled ? '4em' : '9em')};
+            font-size: ${({ $scrolled }) =>
+                $scrolled ? '4em !important' : '9em'};
             top: 50px;
         }
     }
@@ -67,7 +71,7 @@ export const ShavimSlogan = styled.h2<{ $scrolled: boolean }>`
     top: 400px;
     color: white;
     background-color: ${({ $scrolled }) => ($scrolled ? 'none' : '#0d609bd6')};
-    font-size: ${({ $scrolled }) => ($scrolled ? '1.5em' : '4em')};
+    font-size: ${({ $scrolled }) => ($scrolled ? '1.5em !important' : '4em')};
     border-radius: 15px;
     padding: 10px;
     text-align: center;
@@ -76,13 +80,13 @@ export const ShavimSlogan = styled.h2<{ $scrolled: boolean }>`
     transition: top 0.3s ease-in-out;
 
     @media (max-width: 375px) {
-        font-size: ${({ $scrolled }) => ($scrolled ? '1em' : '3em')};
+        font-size: ${({ $scrolled }) => ($scrolled ? '1em !important' : '3em')};
         background-color: #00000000;
         top: 160px;
     }
 
     @media (min-width: 375px) and (max-width: 769px) {
-        font-size: ${({ $scrolled }) => ($scrolled ? '1em' : '3em')};
+        font-size: ${({ $scrolled }) => ($scrolled ? '1em !important' : '3em')};
         background-color: #00000000;
         top: 220px;
     }

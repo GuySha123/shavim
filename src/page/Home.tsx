@@ -4,6 +4,7 @@ import WelcomeSection from '../components/sections/welcome/WelcomeSection';
 import { PageContainer } from './Home.styles';
 import { memberData } from '../data/member-data';
 import { shavimData } from '../data/shavim-value';
+import { partyActionsData } from '../data/party-actions-data';
 import PartysActions from '../components/sections/partys-actions/PartysActions';
 
 export default function Home() {
@@ -11,7 +12,7 @@ export default function Home() {
         <PageContainer>
             <WelcomeSection />
             <PartyPlatform data={memberData} />
-            <PartysActions />
+            <PartysActions data={partyActionsData} />
             <Introduction data={shavimData} />
         </PageContainer>
     );

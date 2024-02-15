@@ -16,7 +16,7 @@ function Footer() {
             <JoinUsTitle>צטרפו אלינו!</JoinUsTitle>
             <FooterSocialMedia>
                 <SocialMediaAnchor
-                    href='#'
+                    href='https://www.instagram.com/shavvim/?igsh=c255Z2N0c202bXhz'
                     target='_blank'
                     style={{ color: `#e1306c` }}
                     title='קישור לעמוד האינסטגרם'
